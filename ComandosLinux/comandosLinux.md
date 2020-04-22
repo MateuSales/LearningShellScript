@@ -27,3 +27,9 @@
 - **head -n3 arquivo.txt:** mostra na tela as três primeiras linhas do arquivo
 - **wc arquivo.txt:** conta as linhas, palavras e caracteres de um arquivo
 - **tail /etc/passwd |sort -k3 -t":" -g:** retorna o arquivo passwd que tem todas as informações de usuários, mostrando as 10 últimas linhas, esta saída servirá de entrada para o comando sort(pipe |) que ordenará baseado no terceiro indice(-k3), os indices estão separados por dois pontos(-t":") e serão considerados como numeros(-g). 
+- **sort arquivos.txt |uniq** mostra os textos dentro do arquivo desconsiderando os repetidos
+
+# Comandos Linux - Parte 3
+
+- **cat arquivo.txt |tr a e :** ler o arquivo.txt, o comando tr vai substituir todas as ocorrências da letra a pela letra e
+- **cat arquivo.txt |tr a e :** ler o arquivo.txt, o comando tr vai substituir todas as ocorrências da letra a pela letra e
