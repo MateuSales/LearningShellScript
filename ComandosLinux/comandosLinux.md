@@ -63,3 +63,32 @@
 - **seq 0 2 20**: gera uma sequência que vai de 0, incrementando de dois em dois até chegar em 20
 - **expr 5 + 2**: soma o 5 mais 2 e retorna o 7 como resultado
 - **echo 5 + 2 | bc**: soma o 5 mais 2 e retorna o 7 como resultado
+
+# Execução de comandos sequenciais
+
+- **date ; echo Linux ; ls**: executa os três arquivos de forma sequencial, um depois do outro de forma idependente
+- **ls alunos.txt && echo Linux**: só executa o segundo comando se o o primeiro executar com sucesso
+- **ls alunos.txt || echo Linux**: só executa o segundo comando se o o primeiro executar com erro
+- **(cd .. ; ls -l)**: como se abrisse um subshell, executasse os comandos, sem voltar no diretório
+
+# Redirecionamentos de saída
+
+- **date > arquivo-tem.txt**: cria um novo arquivo com a saída do comando date
+- **date >> arquivo-tem.txt**:  concatena saída do comando date no final do arquivo.txt
+- **ls -l alunos.txt3 2> log.out**:  cria um arquivo com saída de erro, e põe isso no log.out
+- **ls -l alunos.txt > log.out 2>&1**:  cria um arquivo com saída de erro ou saía de sucesso, e põe isso no log.out
+- **ls -l alunos.txt > /dev/null**:  quando você deseja omitir uma saída você coloca neste caminho, é como se fosse o buraco negro do shell
+- **echo 5 + 2 | bc**: soma o 5 mais 2 e retorna o 7 como resultado
+
+# Redirecionamentos de entrada
+
+- **tr 'a' 'Z' < alunos.txt**: coloca o arquivo.txt como entrada do comando tr
+
+# Variáveis no Shell
+
+
+- **VARIAVEL1=Valor**: declara a variavel1 e coloca nela a string Valor, não pode ter espaços na declaração da variável
+- **echo $VARIAVEL1**: mostra o conteúdo existente na variável
+- **VARIAVEL1="Mateus Sales"**: declara a variavel1 com uma string complexa nela
+- **HORA=\`date +%H\`**: declarar uma variável com conteúdo de um comando do shell
+- **DATA=$(date +%d/%m/%y)**: declarar uma variável com conteúdo de um comando do shell
