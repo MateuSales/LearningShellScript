@@ -92,3 +92,11 @@
 - **VARIAVEL1="Mateus Sales"**: declara a variavel1 com uma string complexa nela
 - **HORA=\`date +%H\`**: declarar uma variável com conteúdo de um comando do shell
 - **DATA=$(date +%d/%m/%y)**: declarar uma variável com conteúdo de um comando do shell
+
+# Formas de proteger caracteres reservados
+
+- Para proteger caracteres reservados você pode usar as seguintes formas:
+
+    - "*": colocar entre aspas duplas, protge tudo exceto ($ ` /)
+    - '*': colocar entre aspas simples, protege tudo inclusive caracteres acima
+    - \ *: colocar uma barra invertida antes do caractere, protege tudo também
