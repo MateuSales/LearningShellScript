@@ -100,3 +100,11 @@
     - "*": colocar entre aspas duplas, protge tudo exceto ($ ` /)
     - '*': colocar entre aspas simples, protege tudo inclusive caracteres acima
     - \ *: colocar uma barra invertida antes do caractere, protege tudo também
+
+# Conceder permissão para executar
+
+- chmod +x nome_do_arquivo.ext
+
+# Executar um arquivo
+
+- ./NomeDoArquivo.sh
