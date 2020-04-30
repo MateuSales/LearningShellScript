@@ -16,5 +16,5 @@ HORAMINUTO=$(date +%H:%M)
 
 clear
 echo "===== Meu primeiro Script ====="
-echo "Exibir hora atual: $HORAMINUTO"
+echo "Exibir hora atual: $HORAMINUTO" 
 echo "==============================="
